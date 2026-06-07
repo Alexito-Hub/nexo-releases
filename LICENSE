@@ -1,0 +1,84 @@
+Nexo — Términos de licencia
+===========================
+
+Copyright © 2026 Alessandro Villogas Gaspar.
+Todos los derechos reservados sobre el código fuente.
+
+Este repositorio (`nexo-releases`) contiene tres tipos de material,
+con licencias distintas para cada uno:
+
+---
+
+1) DOCUMENTACIÓN (archivos .md en este repo)
+--------------------------------------------
+
+Licenciados bajo Creative Commons Attribution 4.0 International
+(CC BY 4.0). Resumen humano:
+  https://creativecommons.org/licenses/by/4.0/deed.es
+
+Podés copiarla, modificarla y redistribuirla siempre que cites al
+autor original (Alessandro Villogas Gaspar) y el enlace al repo.
+
+Texto legal completo:
+  https://creativecommons.org/licenses/by/4.0/legalcode.es
+
+
+2) BINARIOS DE LA APP (APKs, AAB, ejecutables en los releases)
+--------------------------------------------------------------
+
+Distribuidos para uso personal y educativo. Estás autorizado a:
+  - Instalarlos en tus propios dispositivos.
+  - Usarlos sin pago.
+  - Compartir el enlace de descarga de este repo con otros.
+
+No estás autorizado a:
+  - Modificar, decompilar, re-empaquetar y redistribuir los
+    binarios bajo otro nombre.
+  - Cobrar por la app o por acceso a ella.
+  - Distribuir versiones modificadas que se presenten como "Nexo
+    oficial".
+
+El código fuente de la app es PRIVADO y no se incluye en este repo.
+
+
+3) MODELOS DE LUMEN (archivos .task en los releases)
+----------------------------------------------------
+
+Los archivos .task son redistribuciones de modelos de la familia
+Gemma (Google), publicados según los términos de la Gemma Use Policy:
+
+  https://ai.google.dev/gemma/terms
+
+Resumen práctico: uso personal, educativo y de investigación
+permitido. No para fines dañinos. Si redistribuís los modelos vos
+mismo (cosa que la mayoría de usuarios no necesita hacer), tenés
+que mantener los términos de Google.
+
+Nexo aceptó esos términos al descargar los modelos desde Kaggle
+para hostearlos acá. El usuario final que solo los descarga vía la
+app no necesita aceptar nada explícitamente — su uso queda cubierto
+bajo "uso personal por terceros bajo la aceptación del operador".
+
+
+SIN GARANTÍAS
+-------------
+
+Todo el material en este repo (documentación, binarios, modelos) se
+distribuye TAL CUAL, sin garantías de ningún tipo, expresas o
+implícitas. El autor no se hace responsable por:
+  - Pérdida de datos.
+  - Decisiones académicas o financieras tomadas en base a la app.
+  - Interrupciones del servicio (la app depende de servidores de
+    UPLA y Microsoft que el autor no controla).
+  - Cambios en las políticas o APIs de terceros que rompan la app.
+
+Para trámites legales, académicos o financieros importantes,
+verificá siempre con las fuentes oficiales de UPLA.
+
+
+CONTACTO
+--------
+
+Para preguntas sobre licencia, uso comercial o NDA del código
+fuente: abrir issue en
+  https://github.com/Alexito-Hub/nexo-releases/issues

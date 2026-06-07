@@ -1,0 +1,26 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Binarios temporales que no deberían commitearse al repo de docs
+# (los APKs y .task van en los releases de GitHub, no en el repo)
+*.apk
+*.aab
+*.task
+*.tflite
+*.litertlm
+*.tar.gz
+*.zip
+
+# Sketches y borradores locales
+scratch/
+WIP/
+draft-*.md
