@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexo — cliente UPLA multiplataforma con Lumen</title>
+  <meta name="description" content="Cliente no oficial para estudiantes y docentes de la Universidad Peruana Los Andes. Integra SIGMA, Intranet de pagos y Microsoft Teams. Incluye Lumen, asistente de IA que opera completamente en el dispositivo.">
+  <meta property="og:title" content="Nexo — cliente UPLA con asistente Lumen">
+  <meta property="og:description" content="SIGMA, Intranet y Teams en una sola aplicación. Asistente de IA on-device. Sin telemetría.">
+  <meta property="og:image" content="assets/nexo-icon.png">
+  <link rel="icon" type="image/png" href="assets/nexo-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"></span>
+        Nexo
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="lumen.html">Lumen</a>
+        <a href="downloads.html">Descargas</a>
+        <a href="docs.html">Documentación</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="https://github.com/Alexito-Hub/nexo-releases/releases/download/v1.0.0/nexo-v1.0.0-universal.apk" class="nav-cta">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+
+    <section class="hero">
+      <span class="eyebrow">Versión 1.0.0 disponible</span>
+      <h1 class="hero-title">Tu vida académica UPLA<br>en una sola aplicación.</h1>
+      <p class="hero-lead">
+        Cliente multiplataforma que unifica SIGMA, la Intranet de pagos y
+        Microsoft Teams. Incluye Lumen, un asistente de inteligencia
+        artificial que opera íntegramente en tu dispositivo.
+      </p>
+      <div class="hero-actions">
+        <a href="https://github.com/Alexito-Hub/nexo-releases/releases/download/v1.0.0/nexo-v1.0.0-universal.apk" class="btn btn-primary">
+          Descargar para Android
+          <span class="btn-meta">252 MB · APK</span>
+        </a>
+        <a href="downloads.html" class="btn btn-secondary">Otras plataformas</a>
+      </div>
+      <p class="hero-foot">
+        Compatible con Android 7.0 o superior. Disponible para Windows,
+        macOS, Linux y Web.
+      </p>
+    </section>
+
+    <section data-reveal>
+      <div class="section-title-block">
+        <span class="eyebrow">Funcionalidades principales</span>
+        <h2>Una aplicación, tres sistemas integrados.</h2>
+        <p>
+          Nexo elimina la necesidad de alternar entre los portales de la
+          universidad. Todas las funciones académicas y administrativas se
+          acceden con las mismas credenciales SIGMA.
+        </p>
+      </div>
+
+      <div class="grid grid-3" data-reveal-stagger>
+        <div class="card">
+          <div class="card-mark">S</div>
+          <h3 class="card-title">SIGMA</h3>
+          <p class="card-body">
+            Perfil, horario académico, calificaciones, promedios, cuotas y
+            anuncios institucionales. Autenticación por JWT contra la API
+            oficial.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-mark">I</div>
+          <h3 class="card-title">Intranet UPLA</h3>
+          <p class="card-body">
+            Datos complementarios sobre pagos, malla curricular, ranking
+            promocional y cronogramas de cuotas. Sesión persistente por
+            cookies.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-mark">T</div>
+          <h3 class="card-title">Microsoft Teams</h3>
+          <p class="card-body">
+            Integración opcional con Microsoft Graph Education para
+            consultar clases y tareas. OAuth2 Device Code Flow, sin
+            credenciales adicionales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="lumen-banner" data-reveal>
+      <img src="assets/lumen-icon.png" alt="Logo de Lumen">
+      <div>
+        <span class="eyebrow" style="color: var(--lumen-amber-2); background: color-mix(in srgb, var(--lumen-amber-2) 10%, transparent);">Asistente integrado</span>
+        <h3>Lumen — inteligencia artificial en tu dispositivo</h3>
+        <p>
+          Lumen responde tus consultas sobre horario, cuotas, calificaciones
+          y trámites UPLA mediante un modelo de lenguaje que se ejecuta
+          íntegramente en el procesador de tu teléfono. La información
+          nunca abandona el dispositivo.
+        </p>
+        <a href="lumen.html" class="btn btn-lumen" style="margin-top: 0.5rem;">Conocer Lumen</a>
+      </div>
+    </section>
+
+    <section data-reveal>
+      <div class="section-title-block">
+        <span class="eyebrow">Diferenciadores</span>
+        <h2>Diseñado con criterios estrictos.</h2>
+      </div>
+
+      <div class="grid grid-2" data-reveal-stagger>
+        <div class="card">
+          <h3 class="card-title">Privacidad verificable</h3>
+          <p class="card-body">
+            Sin telemetría, sin servicios de análisis, sin publicidad, sin
+            servidores propios. La comunicación se establece directamente
+            entre el dispositivo del usuario y los servidores oficiales de
+            UPLA o Microsoft.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Funcionamiento sin conexión</h3>
+          <p class="card-body">
+            Los datos consultados permanecen en caché local. La aplicación
+            sigue mostrando la información disponible incluso sin
+            conectividad. Lumen opera completamente sin conexión tras la
+            descarga inicial del modelo.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Tolerante a fallos</h3>
+          <p class="card-body">
+            Patrón Resolver con conmutación automática entre SIGMA e
+            Intranet. Si una fuente presenta indisponibilidad, la
+            aplicación continúa funcionando con la alternativa.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Multiplataforma</h3>
+          <p class="card-body">
+            La misma base de código produce binarios nativos para Android,
+            iOS, Windows, macOS, Linux y Web. La experiencia se adapta a
+            las convenciones de cada plataforma.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Notificaciones útiles</h3>
+          <p class="card-body">
+            Recordatorios de clases quince minutos antes del inicio, avisos
+            de vencimiento de cuotas un día antes de la fecha límite y
+            detección de calificaciones nuevas. Notificaciones locales,
+            sin servicios push.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Sin telemetría</h3>
+          <p class="card-body">
+            La aplicación no recopila estadísticas de uso, no integra
+            servicios de análisis y no transmite información a terceros.
+            El proyecto desconoce cuántas personas la utilizan, salvo por
+            los reportes voluntarios en GitHub.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section data-reveal class="prose">
+      <div class="section-title-block">
+        <span class="eyebrow">Filosofía técnica</span>
+        <h2>Cliente puro, sin infraestructura intermedia.</h2>
+      </div>
+      <p>
+        Nexo no opera servidores propios. Las solicitudes que realiza la
+        aplicación son equivalentes a las que se observan en las
+        herramientas de desarrollo de cualquier navegador al utilizar los
+        portales oficiales de UPLA. Esta arquitectura elimina la
+        dependencia de infraestructura mantenida por el responsable del
+        proyecto y permite verificar de forma independiente que la
+        información del usuario no transita por sistemas no autorizados.
+      </p>
+      <p>
+        <a href="architecture.html">Leer la arquitectura completa</a>
+      </p>
+    </section>
+
+    <section data-reveal>
+      <div class="cta-card">
+        <h2>Comenzá ahora.</h2>
+        <p>La instalación toma menos de un minuto.</p>
+        <div class="hero-actions">
+          <a href="https://github.com/Alexito-Hub/nexo-releases/releases/download/v1.0.0/nexo-v1.0.0-universal.apk" class="btn btn-primary">
+            Descargar APK universal
+          </a>
+          <a href="install.html" class="btn btn-secondary">Guía de instalación</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-about">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"></span>
+          Nexo
+        </a>
+        <p>
+          Cliente no oficial para estudiantes y docentes de la Universidad
+          Peruana Los Andes. Proyecto independiente, sin afiliación
+          institucional.
+        </p>
+      </div>
+      <div>
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="downloads.html">Descargas</a></li>
+          <li><a href="lumen.html">Lumen</a></li>
+          <li><a href="install.html">Instalación</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases/releases">Versiones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Documentación</h4>
+        <ul>
+          <li><a href="docs.html">Índice</a></li>
+          <li><a href="architecture.html">Arquitectura</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases/blob/main/docs/troubleshoot.md">Diagnóstico</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Política de privacidad</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases/blob/main/LICENSE">Licencia</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases/issues">Reportar un problema</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases">Repositorio público</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Alessandro Villogas Gaspar. La documentación de este sitio
+      se publica bajo Creative Commons BY 4.0.
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

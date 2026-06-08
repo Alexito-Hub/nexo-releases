@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas frecuentes · Nexo</title>
+  <meta name="description" content="Respuestas a las preguntas más habituales sobre Nexo, el asistente Lumen, privacidad y datos académicos.">
+  <link rel="icon" type="image/png" href="assets/nexo-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"></span>
+        Nexo
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="lumen.html">Lumen</a>
+        <a href="downloads.html">Descargas</a>
+        <a href="docs.html">Documentación</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="https://github.com/Alexito-Hub/nexo-releases/releases/download/v1.0.0/nexo-v1.0.0-universal.apk" class="nav-cta">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="narrow prose">
+
+    <section data-reveal>
+      <span class="eyebrow">Soporte</span>
+      <h1 class="page-title">Preguntas frecuentes</h1>
+      <p class="page-subtitle">
+        Respuestas a las consultas más habituales sobre la aplicación,
+        Lumen, privacidad y datos académicos.
+      </p>
+    </section>
+
+    <section data-reveal class="faq-group">
+      <h3>Sobre Nexo</h3>
+      <div class="faq">
+
+        <details>
+          <summary>¿La aplicación es oficial de UPLA?</summary>
+          <div class="faq-body">
+            <p>No. Nexo es un proyecto independiente desarrollado por Alessandro Villogas Gaspar, estudiante de la universidad. No cuenta con patrocinio, supervisión ni reconocimiento institucional.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Es seguro introducir mi contraseña en la aplicación?</summary>
+          <div class="faq-body">
+            <p>Las credenciales se utilizan exclusivamente para autenticarse contra los servidores oficiales de SIGMA y de la Intranet UPLA, mediante conexiones TLS (HTTPS). Estas son las mismas solicitudes que realiza el portal web institucional.</p>
+            <p>Si se activa la opción "Recordar credenciales", se almacenan en el área privada de la aplicación, codificadas en Base64. No se transmiten a ningún servicio adicional, dado que el proyecto no opera servidores propios.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿La aplicación tiene algún costo?</summary>
+          <div class="faq-body">
+            <p>Nexo es gratuita. No incluye publicidad, compras integradas ni suscripciones.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Cómo se sostiene económicamente el proyecto?</summary>
+          <div class="faq-body">
+            <p>No existe un modelo de negocio. El proyecto se desarrolla y mantiene sin financiación, en horas fuera del horario académico del mantenedor.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Está disponible para iPhone?</summary>
+          <div class="faq-body">
+            <p>La aplicación compila para iOS, pero no se distribuye oficialmente en App Store debido al costo del programa Apple Developer. Para instalación local, consultar la guía de instalación.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Funciona sin conexión a internet?</summary>
+          <div class="faq-body">
+            <p>Parcialmente. La carga inicial requiere conectividad para autenticar y obtener los datos del usuario. Posteriormente, los datos almacenados en caché permanecen accesibles sin conexión.</p>
+            <p>El asistente Lumen funciona sin conexión tras la descarga inicial del modelo.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Qué ocurre si UPLA modifica sus APIs?</summary>
+          <div class="faq-body">
+            <p>Cuando los endpoints cambian, las secciones afectadas pueden presentar errores hasta que se publique una versión actualizada. La resolución depende del reporte oportuno por parte de los usuarios mediante issues en el repositorio.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Por qué la aplicación ocupa tanto espacio?</summary>
+          <div class="faq-body">
+            <p>El APK para arquitecturas modernas pesa aproximadamente 160 MB. La mayor parte del tamaño corresponde a las bibliotecas nativas C++ requeridas por el módulo Lumen (MediaPipe y TensorFlow Lite). Si el módulo Lumen no se activa, estas bibliotecas siguen presentes pero no se cargan en memoria.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <section data-reveal class="faq-group">
+      <h3>Sobre Lumen</h3>
+      <div class="faq">
+
+        <details>
+          <summary>¿Lumen tiene acceso a mis datos académicos?</summary>
+          <div class="faq-body">
+            <p>Sí, dentro del dispositivo. Lumen consulta los datos que la aplicación ya tiene almacenados localmente (perfil, horario, cuotas, calificaciones) para responder a las consultas. Esta información no abandona el dispositivo.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Es posible usar Nexo sin activar Lumen?</summary>
+          <div class="faq-body">
+            <p>Sí. Lumen es completamente opcional. La descarga del modelo solo ocurre cuando el usuario activa explícitamente el asistente. Si nunca se interactúa con el botón flotante de Lumen, la aplicación funciona como un cliente UPLA sin componente de IA.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Cuánto espacio requiere el modelo?</summary>
+          <div class="faq-body">
+            <p>Lumen Ligero: aproximadamente 290 MB. Lumen Estándar: aproximadamente 530 MB. La descarga es única y solo se repite si el usuario cambia de variante.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Por qué Lumen no recuerda las consultas anteriores?</summary>
+          <div class="faq-body">
+            <p>En la versión 1.0, cada consulta se procesa de forma independiente para evitar interferencias entre temas y para garantizar que el contexto enviado al modelo sea siempre el adecuado para la pregunta formulada. La persistencia del historial está prevista para la versión 1.3.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Las respuestas de Lumen son incorrectas o el asistente no responde</summary>
+          <div class="faq-body">
+            <p>Los modelos pequeños tienen limitaciones inherentes. Se recomienda:</p>
+            <ol>
+              <li>Reformular la consulta con términos más específicos.</li>
+              <li>Probar con la otra variante: cambiar de Lumen Ligero a Lumen Estándar puede mejorar la calidad.</li>
+              <li>Limpiar el historial desde el botón de actualización del chat.</li>
+            </ol>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Es posible entrenar Lumen con datos personalizados?</summary>
+          <div class="faq-body">
+            <p>No con la versión actual. Lumen utiliza un modelo pre-entrenado al que se le inyectan los datos del usuario en tiempo de ejecución. El ajuste fino del modelo requeriría infraestructura no disponible en el contexto del proyecto.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Lumen consume mucha batería?</summary>
+          <div class="faq-body">
+            <p>El consumo es elevado durante la generación de una respuesta (aproximadamente 5-15 segundos de uso intensivo de procesador). Dado que esto solo ocurre al consultar al asistente, el impacto diario es moderado.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿En qué dispositivos Android funciona?</summary>
+          <div class="faq-body">
+            <p>Android 7.0 (API 24) o superior, con 3 GB de RAM mínimo recomendado y procesador ARM64. En dispositivos que no cumplan estos requisitos, Nexo puede utilizarse sin activar Lumen.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <section data-reveal class="faq-group">
+      <h3>Privacidad</h3>
+      <div class="faq">
+
+        <details>
+          <summary>¿Se recopilan estadísticas de uso?</summary>
+          <div class="faq-body">
+            <p>No. La aplicación no implementa telemetría ni análisis de uso.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Se almacenan registros en algún sistema externo?</summary>
+          <div class="faq-body">
+            <p>No. La aplicación genera registros para depuración local, accesibles mediante herramientas del sistema operativo. Estos registros no se transmiten a ningún destino externo.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Microsoft o Google tienen acceso a mis datos académicos?</summary>
+          <div class="faq-body">
+            <p><strong>Google:</strong> únicamente conoce que se descargó el modelo Lumen desde un release de GitHub. No recibe información posterior sobre el uso de la aplicación.</p>
+            <p><strong>Microsoft:</strong> solo si se activa la integración con Teams. En ese caso, el usuario otorga permisos explícitos para que la aplicación lea su lista de clases y tareas mediante Microsoft Graph.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Qué ocurre si pierdo el dispositivo?</summary>
+          <div class="faq-body">
+            <p>La sesión almacenada permanece en el dispositivo. Se recomienda cambiar la contraseña de SIGMA desde otro dispositivo: esto invalida el token almacenado y la siguiente sesión automática en el dispositivo perdido fallará.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <section data-reveal class="faq-group">
+      <h3>Trámites y datos académicos</h3>
+      <div class="faq">
+
+        <details>
+          <summary>¿Las calificaciones mostradas son las oficiales?</summary>
+          <div class="faq-body">
+            <p>Sí. Provienen directamente de SIGMA. Ante discrepancias con el portal web, la solución habitual es actualizar la información mediante pull-to-refresh.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Puedo pagar las cuotas desde la aplicación?</summary>
+          <div class="faq-body">
+            <p>No. Nexo es una aplicación de solo lectura. El pago debe realizarse por los canales oficiales: portal de pagos UPLA, banca electrónica o ventanilla bancaria.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Puedo matricularme desde la aplicación?</summary>
+          <div class="faq-body">
+            <p>No. El proceso de matrícula se realiza exclusivamente desde el portal SIGMA web. Nexo no automatiza trámites administrativos.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Por qué algunas calificaciones no aparecen?</summary>
+          <div class="faq-body">
+            <p>Las causas habituales son: la calificación aún no ha sido publicada por el docente, o la información pertenece a una vista heredada del sistema que la API moderna no expone.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <section data-reveal class="faq-group">
+      <h3>Desarrollo y contribuciones</h3>
+      <div class="faq">
+
+        <details>
+          <summary>¿El código fuente está disponible?</summary>
+          <div class="faq-body">
+            <p>La documentación se distribuye bajo licencia CC BY 4.0. El código fuente de la aplicación no es público en esta fase del proyecto. Las contribuciones bajo acuerdo de confidencialidad pueden coordinarse mediante issue.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Cómo reporto un error?</summary>
+          <div class="faq-body">
+            <p>Mediante el sistema de issues del repositorio público: <a href="https://github.com/Alexito-Hub/nexo-releases/issues">github.com/Alexito-Hub/nexo-releases/issues</a></p>
+            <p>Información útil para acelerar la resolución: pasos para reproducir, captura cuando corresponda, modelo del dispositivo, versión del SO y versión de Nexo (visible en Perfil → Acerca de Nexo).</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Puedo proponer nuevas funcionalidades?</summary>
+          <div class="faq-body">
+            <p>Sí, mediante issues. Las propuestas se evalúan según su alineación con los principios del proyecto y la disponibilidad de tiempo del mantenedor.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <section data-reveal>
+      <div class="cta-card">
+        <h2>¿No encontrás respuesta?</h2>
+        <p>Abrí un issue en el repositorio público y será atendido en cuanto sea posible.</p>
+        <a href="https://github.com/Alexito-Hub/nexo-releases/issues/new" class="btn btn-primary">Abrir un issue</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-about">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"></span>
+          Nexo
+        </a>
+        <p>
+          Cliente no oficial para estudiantes y docentes de la Universidad
+          Peruana Los Andes. Proyecto independiente, sin afiliación
+          institucional.
+        </p>
+      </div>
+      <div>
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="downloads.html">Descargas</a></li>
+          <li><a href="lumen.html">Lumen</a></li>
+          <li><a href="install.html">Instalación</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases/releases">Versiones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Documentación</h4>
+        <ul>
+          <li><a href="docs.html">Índice</a></li>
+          <li><a href="architecture.html">Arquitectura</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases/blob/main/docs/troubleshoot.md">Diagnóstico</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Política de privacidad</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases/blob/main/LICENSE">Licencia</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases/issues">Reportar un problema</a></li>
+          <li><a href="https://github.com/Alexito-Hub/nexo-releases">Repositorio público</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Alessandro Villogas Gaspar. La documentación de este sitio
+      se publica bajo Creative Commons BY 4.0.
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
