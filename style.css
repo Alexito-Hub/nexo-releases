@@ -685,19 +685,6 @@ td .btn { padding: 8px 14px; font-size: 0.84rem; }
 [data-reveal].revealed { opacity: 1; transform: translateY(0); }
 
 /* Accesibilidad */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 8px;
-  background: var(--primary);
-  color: white;
-  padding: 8px 14px;
-  border-radius: 6px;
-  z-index: 100;
-  font-weight: 600;
-}
-.skip-link:focus { top: 8px; color: white; text-decoration: none; }
-
 :focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
@@ -910,4 +897,166 @@ body {
   .stagger-item { opacity: 1; transform: none; transition: none; }
   .toast { transition: none; }
   .card::after { display: none; }
+}
+
+/* ============================================================
+   About: tarjeta del desarrollador
+   ============================================================ */
+
+.dev-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 32px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  margin: 1rem 0 2.5rem;
+}
+
+.dev-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--primary) 30%, transparent);
+}
+
+.dev-name {
+  margin: 0 0 0.25em;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+.dev-role {
+  margin: 0 0 1rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.dev-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.dev-meta li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 0.85rem;
+}
+.dev-meta li span {
+  color: var(--text-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.7rem;
+  margin-bottom: 2px;
+}
+.dev-meta li strong {
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .dev-card { flex-direction: column; align-items: center; text-align: center; padding: 28px 20px; }
+  .dev-meta { width: 100%; }
+  .dev-meta li { align-items: center; }
+}
+
+/* ============================================================
+   About: dedicatoria
+   ============================================================ */
+
+.dedication {
+  position: relative;
+  padding: 56px 48px;
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(ellipse 80% 90% at 20% 20%, color-mix(in srgb, var(--lumen-violet) 14%, transparent), transparent 70%),
+    radial-gradient(ellipse 70% 80% at 100% 100%, color-mix(in srgb, var(--primary) 12%, transparent), transparent 70%),
+    var(--surface);
+  border: 1px solid var(--border);
+  text-align: center;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.dedication-mark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--lumen-violet), var(--primary));
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.2rem;
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--lumen-violet) 30%, transparent);
+  animation: dedication-glow 4s ease-in-out infinite;
+}
+
+@keyframes dedication-glow {
+  0%, 100% {
+    box-shadow: 0 8px 24px color-mix(in srgb, var(--lumen-violet) 30%, transparent);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 12px 32px color-mix(in srgb, var(--lumen-violet) 45%, transparent);
+    transform: scale(1.04);
+  }
+}
+
+.dedication-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-mute);
+  margin: 0 0 1.5rem;
+  font-weight: 700;
+}
+
+.dedication-body {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text);
+  max-width: 540px;
+  margin: 0 auto 1.5rem;
+  font-style: italic;
+}
+
+.dedication-body strong {
+  background: linear-gradient(135deg, var(--lumen-violet), var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.dedication-sign {
+  font-size: 0.92rem;
+  color: var(--text-mute);
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .dedication { padding: 40px 24px; }
+  .dedication-body { font-size: 1.05rem; }
 }
