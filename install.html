@@ -13,10 +13,7 @@
 
   <header class="site-header">
     <div class="site-header-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-mark"></span>
-        Nexo
-      </a>
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Nexo</a>
       <nav class="nav" aria-label="Principal">
         <a href="index.html">Inicio</a>
         <a href="lumen.html">Lumen</a>
@@ -28,7 +25,7 @@
     </div>
   </header>
 
-  <main id="content" class="narrow prose">
+  <main id="content" class="narrow">
 
     <section data-reveal>
       <span class="eyebrow">Guía paso a paso</span>
@@ -43,50 +40,47 @@
     <section data-reveal>
       <h2>Android</h2>
 
-      <h3>Pasos</h3>
+      <h3>Procedimiento</h3>
       <ol>
         <li>Acceder al <a href="https://github.com/Alexito-Hub/nexo-releases/releases/latest">último release</a> del repositorio.</li>
-        <li>Descargar el APK correspondiente al dispositivo (ver tabla más abajo).</li>
-        <li>Abrir el archivo descargado desde el gestor de archivos del dispositivo.</li>
-        <li>Android solicitará autorización para instalar aplicaciones de fuentes desconocidas. Activar "Permitir desde esta fuente" en Ajustes y volver a confirmar la instalación.</li>
+        <li>Descargar el APK correspondiente al dispositivo.</li>
+        <li>Abrir el archivo descargado desde el gestor de archivos.</li>
+        <li>Android solicitará autorización para instalar aplicaciones de fuentes desconocidas. Activar "Permitir desde esta fuente" y confirmar la instalación.</li>
         <li>Abrir Nexo desde el menú de aplicaciones.</li>
         <li>Aceptar los términos y autenticarse con las credenciales de SIGMA UPLA.</li>
       </ol>
 
       <h3>Variantes disponibles</h3>
-      <table>
-        <thead>
-          <tr><th>Variante</th><th>Tamaño</th><th>Recomendada para</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><code>arm64-v8a</code></td><td class="size">~160 MB</td><td>Mayoría de dispositivos modernos (Android 8.0+)</td></tr>
-          <tr><td><code>armeabi-v7a</code></td><td class="size">~27 MB</td><td>Dispositivos antiguos 32-bit (Lumen no disponible)</td></tr>
-          <tr><td><code>universal</code></td><td class="size">~252 MB</td><td>Cuando se desconoce la arquitectura</td></tr>
-        </tbody>
-      </table>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Variante</th><th>Tamaño</th><th>Recomendada para</th></tr></thead>
+          <tbody>
+            <tr><td><code>arm64-v8a</code></td><td class="size">~160 MB</td><td>Mayoría de dispositivos modernos (Android 8.0+)</td></tr>
+            <tr><td><code>armeabi-v7a</code></td><td class="size">~27 MB</td><td>Dispositivos antiguos 32-bit (Lumen no disponible)</td></tr>
+            <tr><td><code>universal</code></td><td class="size">~252 MB</td><td>Cuando se desconoce la arquitectura</td></tr>
+          </tbody>
+        </table>
+      </div>
 
       <h3>Permisos solicitados</h3>
-      <table>
-        <thead>
-          <tr><th>Permiso</th><th>Uso</th><th>Obligatorio</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Notificaciones</td><td>Recordatorios de clases y vencimientos</td><td>No</td></tr>
-          <tr><td>Almacenamiento</td><td>Exportación de PDFs (solo Android 9 o anterior)</td><td>Condicional</td></tr>
-          <tr><td>Micrófono</td><td>Entrada de voz para Lumen (versión 1.4 o posterior)</td><td>No</td></tr>
-        </tbody>
-      </table>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Permiso</th><th>Uso</th><th>Obligatorio</th></tr></thead>
+          <tbody>
+            <tr><td>Notificaciones</td><td>Recordatorios de clases y vencimientos</td><td>No</td></tr>
+            <tr><td>Almacenamiento</td><td>Exportación de PDFs (solo Android 9 o anterior)</td><td>Condicional</td></tr>
+            <tr><td>Micrófono</td><td>Entrada de voz para Lumen (versión 1.4 o posterior)</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-      <p>
-        La aplicación no solicita acceso a contactos, cámara, ubicación,
-        SMS ni historial de llamadas.
-      </p>
+      <p>La aplicación no solicita acceso a contactos, cámara, ubicación, SMS ni historial de llamadas.</p>
     </section>
 
     <section data-reveal>
       <h2>Windows</h2>
 
-      <h3>Pasos</h3>
+      <h3>Procedimiento</h3>
       <ol>
         <li>Descargar <code>nexo-v1.0.0-windows-x64.zip</code> desde el <a href="https://github.com/Alexito-Hub/nexo-releases/releases/latest">último release</a>.</li>
         <li>Extraer el contenido del archivo en una carpeta temporal.</li>
@@ -94,14 +88,14 @@
         <li>En el primer arranque, la aplicación presenta un asistente con dos opciones:</li>
       </ol>
 
-      <div class="grid grid-2" data-reveal-stagger style="margin: 1.5rem 0;">
+      <div class="grid grid-2" style="margin: 1.5rem 0;">
         <div class="card">
           <div class="card-mark">A</div>
           <h3 class="card-title">Instalar</h3>
           <p class="card-body">
             Nexo se copia a <code>%LOCALAPPDATA%\Nexo</code>, crea
-            accesos directos en el escritorio y en el menú Inicio según la
-            selección, y se registra en el Panel de control.
+            accesos directos en el escritorio y en el menú Inicio según
+            la selección, y se registra en el Panel de control.
           </p>
         </div>
         <div class="card">
@@ -122,10 +116,7 @@
       </ul>
 
       <div class="notice warning">
-        Los binarios no están firmados con certificado de validación
-        extendida. Si Windows Defender SmartScreen presenta una advertencia,
-        seleccionar "Más información" y a continuación "Ejecutar de todas
-        formas".
+        <p>Los binarios no están firmados con certificado de validación extendida. Si Windows Defender SmartScreen presenta una advertencia, seleccionar "Más información" y a continuación "Ejecutar de todas formas".</p>
       </div>
     </section>
 
@@ -171,51 +162,29 @@
       <ol>
         <li>Localizar el botón flotante de Lumen en la esquina inferior derecha de la pantalla principal.</li>
         <li>Tocar el botón. Se abrirá un diálogo de bienvenida que describe la política de privacidad y presenta el selector de variante.</li>
-        <li>Seleccionar la variante adecuada:
-          <ul>
-            <li><strong>Lumen Ligero</strong> (~290 MB) para dispositivos con 2-3 GB de RAM.</li>
-            <li><strong>Lumen Estándar</strong> (~530 MB) para dispositivos con 4 GB de RAM o superior.</li>
-          </ul>
-        </li>
+        <li>Seleccionar la variante adecuada (Ligero para dispositivos con 2-3 GB de RAM, Estándar para 4 GB o superior).</li>
         <li>Confirmar con "Aceptar y descargar". La descarga es única y solo se repite al cambiar de variante.</li>
         <li>Al finalizar, el asistente queda disponible para su uso.</li>
       </ol>
-      <p>
-        El modelo se almacena en el directorio privado de la aplicación.
-        Su eliminación se realiza desde Lumen → Configuración → "Borrar
-        modelo".
-      </p>
+      <p>El modelo se almacena en el directorio privado de la aplicación. Su eliminación se realiza desde Lumen → Configuración → "Borrar modelo".</p>
     </section>
 
     <section data-reveal>
       <h2>Desinstalación</h2>
       <h3>Android</h3>
-      <p>
-        Mantener pulsado el icono de la aplicación y seleccionar
-        "Desinstalar". El sistema elimina automáticamente todos los datos
-        asociados.
-      </p>
+      <p>Mantener pulsado el icono de la aplicación y seleccionar "Desinstalar". El sistema elimina automáticamente todos los datos asociados.</p>
       <h3>Windows</h3>
-      <p>
-        Panel de control → Aplicaciones → seleccionar "Nexo UPLA" →
-        Desinstalar. La operación elimina los archivos y la entrada del
-        registro.
-      </p>
+      <p>Panel de control → Aplicaciones → seleccionar "Nexo UPLA" → Desinstalar.</p>
       <h3>Eliminación selectiva del modelo Lumen</h3>
-      <p>
-        Lumen → Configuración → "Borrar modelo". Libera el almacenamiento
-        sin desinstalar la aplicación completa.
-      </p>
+      <p>Lumen → Configuración → "Borrar modelo". Libera el almacenamiento sin desinstalar la aplicación completa.</p>
     </section>
 
     <section data-reveal>
-      <div class="cta-card">
+      <div class="cta">
         <h2>¿Listo para instalar?</h2>
         <p>Comenzá con la descarga directa de Android.</p>
         <div class="hero-actions">
-          <a href="https://github.com/Alexito-Hub/nexo-releases/releases/download/v1.0.0/nexo-v1.0.0-universal.apk" class="btn btn-primary">
-            Descargar APK universal
-          </a>
+          <a href="https://github.com/Alexito-Hub/nexo-releases/releases/download/v1.0.0/nexo-v1.0.0-universal.apk" class="btn btn-primary">Descargar APK universal</a>
           <a href="downloads.html" class="btn btn-secondary">Todas las descargas</a>
         </div>
       </div>
@@ -226,15 +195,8 @@
   <footer class="site-footer">
     <div class="site-footer-inner">
       <div class="footer-about">
-        <a href="index.html" class="brand">
-          <span class="brand-mark"></span>
-          Nexo
-        </a>
-        <p>
-          Cliente no oficial para estudiantes y docentes de la Universidad
-          Peruana Los Andes. Proyecto independiente, sin afiliación
-          institucional.
-        </p>
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Nexo</a>
+        <p>Cliente no oficial para estudiantes y docentes de la Universidad Peruana Los Andes. Proyecto independiente, sin afiliación institucional.</p>
       </div>
       <div>
         <h4>Producto</h4>
@@ -264,10 +226,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      © 2026 Alessandro Villogas Gaspar. La documentación de este sitio
-      se publica bajo Creative Commons BY 4.0.
-    </div>
+    <div class="footer-bottom">© 2026 Alessandro Villogas Gaspar. Documentación bajo Creative Commons BY 4.0.</div>
   </footer>
 
   <script src="app.js" defer></script>

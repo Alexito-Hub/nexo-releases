@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexo — cliente UPLA multiplataforma con Lumen</title>
-  <meta name="description" content="Cliente no oficial para estudiantes y docentes de la Universidad Peruana Los Andes. Integra SIGMA, Intranet de pagos y Microsoft Teams. Incluye Lumen, asistente de IA que opera completamente en el dispositivo.">
+  <meta name="description" content="Cliente no oficial para estudiantes y docentes de la Universidad Peruana Los Andes. Integra SIGMA, Intranet de pagos y Microsoft Teams. Incluye Lumen, asistente de IA on-device.">
   <meta property="og:title" content="Nexo — cliente UPLA con asistente Lumen">
   <meta property="og:description" content="SIGMA, Intranet y Teams en una sola aplicación. Asistente de IA on-device. Sin telemetría.">
   <meta property="og:image" content="assets/nexo-icon.png">
@@ -35,11 +35,11 @@
 
     <section class="hero">
       <span class="eyebrow">Versión 1.0.0 disponible</span>
-      <h1 class="hero-title">Tu vida académica UPLA<br>en una sola aplicación.</h1>
+      <h1 class="hero-title">Tu vida académica UPLA en <em>una sola aplicación</em>.</h1>
       <p class="hero-lead">
         Cliente multiplataforma que unifica SIGMA, la Intranet de pagos y
         Microsoft Teams. Incluye Lumen, un asistente de inteligencia
-        artificial que opera íntegramente en tu dispositivo.
+        artificial que opera íntegramente en el dispositivo.
       </p>
       <div class="hero-actions">
         <a href="https://github.com/Alexito-Hub/nexo-releases/releases/download/v1.0.0/nexo-v1.0.0-universal.apk" class="btn btn-primary">
@@ -55,17 +55,14 @@
     </section>
 
     <section data-reveal>
-      <div class="section-title-block">
-        <span class="eyebrow">Funcionalidades principales</span>
-        <h2>Una aplicación, tres sistemas integrados.</h2>
-        <p>
-          Nexo elimina la necesidad de alternar entre los portales de la
-          universidad. Todas las funciones académicas y administrativas se
-          acceden con las mismas credenciales SIGMA.
-        </p>
-      </div>
-
-      <div class="grid grid-3" data-reveal-stagger>
+      <span class="eyebrow">Funcionalidades principales</span>
+      <h2>Una aplicación, tres sistemas integrados.</h2>
+      <p style="max-width: 680px; margin-bottom: 2rem;">
+        Nexo elimina la necesidad de alternar entre los portales de la
+        universidad. Todas las funciones académicas y administrativas se
+        acceden con las mismas credenciales SIGMA.
+      </p>
+      <div class="grid grid-3">
         <div class="card">
           <div class="card-mark">S</div>
           <h3 class="card-title">SIGMA</h3>
@@ -96,28 +93,27 @@
       </div>
     </section>
 
-    <section class="lumen-banner" data-reveal>
-      <img src="assets/lumen-icon.png" alt="Logo de Lumen">
-      <div>
-        <span class="eyebrow" style="color: var(--lumen-amber-2); background: color-mix(in srgb, var(--lumen-amber-2) 10%, transparent);">Asistente integrado</span>
-        <h3>Lumen — inteligencia artificial en tu dispositivo</h3>
-        <p>
-          Lumen responde tus consultas sobre horario, cuotas, calificaciones
-          y trámites UPLA mediante un modelo de lenguaje que se ejecuta
-          íntegramente en el procesador de tu teléfono. La información
-          nunca abandona el dispositivo.
-        </p>
-        <a href="lumen.html" class="btn btn-lumen" style="margin-top: 0.5rem;">Conocer Lumen</a>
+    <section data-reveal>
+      <div class="lumen-banner">
+        <img src="assets/lumen-icon.png" alt="Logo de Lumen">
+        <div>
+          <span class="eyebrow" style="color: var(--lumen-amber); margin-bottom: 0.5rem;">Asistente integrado</span>
+          <h3>Lumen — inteligencia artificial en tu dispositivo</h3>
+          <p>
+            Lumen responde tus consultas sobre horario, cuotas, calificaciones
+            y trámites UPLA mediante un modelo de lenguaje que se ejecuta
+            íntegramente en el procesador de tu teléfono. La información
+            nunca abandona el dispositivo.
+          </p>
+          <a href="lumen.html" class="btn btn-lumen">Conocer Lumen</a>
+        </div>
       </div>
     </section>
 
     <section data-reveal>
-      <div class="section-title-block">
-        <span class="eyebrow">Diferenciadores</span>
-        <h2>Diseñado con criterios estrictos.</h2>
-      </div>
-
-      <div class="grid grid-2" data-reveal-stagger>
+      <span class="eyebrow">Diferenciadores</span>
+      <h2>Diseñado con criterios estrictos.</h2>
+      <div class="grid grid-2" style="margin-top: 2rem;">
         <div class="card">
           <h3 class="card-title">Privacidad verificable</h3>
           <p class="card-body">
@@ -173,12 +169,10 @@
       </div>
     </section>
 
-    <section data-reveal class="prose">
-      <div class="section-title-block">
-        <span class="eyebrow">Filosofía técnica</span>
-        <h2>Cliente puro, sin infraestructura intermedia.</h2>
-      </div>
-      <p>
+    <section data-reveal>
+      <span class="eyebrow">Filosofía técnica</span>
+      <h2>Cliente puro, sin infraestructura intermedia.</h2>
+      <p style="max-width: 680px;">
         Nexo no opera servidores propios. Las solicitudes que realiza la
         aplicación son equivalentes a las que se observan en las
         herramientas de desarrollo de cualquier navegador al utilizar los
@@ -187,13 +181,11 @@
         proyecto y permite verificar de forma independiente que la
         información del usuario no transita por sistemas no autorizados.
       </p>
-      <p>
-        <a href="architecture.html">Leer la arquitectura completa</a>
-      </p>
+      <p><a href="architecture.html">Leer la arquitectura completa →</a></p>
     </section>
 
     <section data-reveal>
-      <div class="cta-card">
+      <div class="cta">
         <h2>Comenzá ahora.</h2>
         <p>La instalación toma menos de un minuto.</p>
         <div class="hero-actions">
@@ -249,8 +241,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 Alessandro Villogas Gaspar. La documentación de este sitio
-      se publica bajo Creative Commons BY 4.0.
+      © 2026 Alessandro Villogas Gaspar. Documentación bajo Creative Commons BY 4.0.
     </div>
   </footer>
 
