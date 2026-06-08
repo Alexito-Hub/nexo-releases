@@ -205,3 +205,15 @@
     });
   });
 })();
+
+
+// Mobile menu
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtns = document.querySelectorAll('.mobile-menu-btn');
+  menuBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const nav = this.nextElementSibling;
+      nav.classList.toggle('nav-open');
+    });
+  });
+});

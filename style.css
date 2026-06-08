@@ -1025,3 +1025,16 @@ body {
   .dedication { padding: 40px 24px; }
   .dedication-body { font-size: 1.05rem; }
 }
+
+
+/* Mobile menu */
+.mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-strong); padding: 0.5rem; }
+@media (max-width: 720px) {
+  .mobile-menu-btn { display: block; margin-left: auto; }
+  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); flex-direction: column; padding: 1rem; border-bottom: 1px solid var(--border); box-shadow: var(--shadow-md); }
+  .nav.nav-open { display: flex; }
+  .nav a { width: 100%; text-align: center; margin: 0; }
+  .nav a.nav-cta { display: block; margin-top: 0.5rem; }
+  .grid { gap: 1rem; }
+  .site-header-inner { flex-wrap: wrap; }
+}
